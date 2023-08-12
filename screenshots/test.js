@@ -12,7 +12,7 @@ var fs = require('fs');
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('https://8080-eaeacfdcfeaadebeaaebdefaadcafaafdfd.project.examly.io');
+  await page.goto('https://8080-ddcecababaadebeaaebdefaadcafaafdfd.project.examly.io');
   await page.screenshot({path: './output/example.png'});
   
   const image1 = fs.readFileSync("./screenshots/example.png");

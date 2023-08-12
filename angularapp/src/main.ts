@@ -9,7 +9,8 @@ import 'firebase/compat/auth'
 if (environment.production) {
   enableProdMode();
 }
-
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
 fireBase.initializeApp(environment.firebase)
 
 let appInit = false;
@@ -21,4 +22,3 @@ fireBase.auth().onAuthStateChanged(() => {
   }
   appInit = true
 })
-
