@@ -8,8 +8,6 @@
  *      file.
  *
  * The current setup is for so-called "evergreen" browsers; the last versions of browsers that
- * automatically update themselves. This includes recent versions of Safari, Chrome (including
- * Opera), Edge on the desktop, and iOS and Chrome on mobile.
  *
  * Learn more in https://angular.io/guide/browser-support
  */
@@ -19,6 +17,7 @@
  */
 
 /**
+
  * By default, zone.js will patch all possible macroTask and DomEvents
  * user can disable parts of macroTask/DomEvents patch by setting following flags
  * because those flags need to be set before `zone.js` being loaded, and webpack

@@ -25,7 +25,7 @@ var fs = require('fs');
   console.log('TESTCASE:test_case7:success:',diffpercent);
 
   const page1 = await browser.newPage();
-  await page1.goto('https://8081-ddcecababaadebeaaebdefaadcafaafdfd.project.examly.io');
+  await page1.goto('https://8081-eaeacfdcfeaadebeaaebdefaadcafaafdfd.project.examly.io');
   await page1.screenshot({path: './output/example1.png'});
   
   const image3 = fs.readFileSync("./screenshots/example1.png");

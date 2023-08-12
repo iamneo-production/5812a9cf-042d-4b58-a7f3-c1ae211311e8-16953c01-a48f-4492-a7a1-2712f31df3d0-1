@@ -1,3 +1,4 @@
+
 import { Component, Input, OnInit, ViewChild, ElementRef, ViewEncapsulation } from '@angular/core';
 import * as _ from 'lodash';
 import datas from './data';
@@ -5,6 +6,8 @@ import { MessageService } from 'primeng/api';
 import videojs from 'video.js';
 
 const Clapper = require('clappr');
+import { Component } from '@angular/core';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -25,4 +28,8 @@ export class AppComponent implements OnInit {
         console.log("Clapper", Clapper)
     }
     
-}
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  constructor(public auth: AuthService) {
+  }
